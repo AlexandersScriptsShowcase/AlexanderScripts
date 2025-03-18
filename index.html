@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Show Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #text-container {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showText()">Infinite yield</button>
+    <div id="text-container">
+        <p id="text">loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))() -- i don't own this script, credits to DarkNetwork on github</p>
+        <button onclick="hideText()">Close</button>
+    </div>
+    
+    <script>
+        function showText() {
+            document.getElementById("text-container").style.display = "block";
+        }
+        function hideText() {
+            document.getElementById("text-container").style.display = "none";
+        }
+    </script>
+</body>
+</html>
